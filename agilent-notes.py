@@ -42,7 +42,7 @@ JUPITER_GALILEO_E3634A = rm.open_resource('GPIB0::1::INSTR')
 def main():
 
     def interrupterApp():
-        firstInput = input("Hello. Welcome to Systima's Ordinance Interrupter Automated Test Bench...\n Please choose what you would like to do:\n (Please respond with:\n 1. Limited Bench Test at Low Voltage\n 2. Limited Bench Test at High Voltage\n 3. Full Bench Test: parts a,b,c,d,e)\n 4. Full Bench Test: part(f)\n 5. Full Bench Test: part(h)\n 6. Quit\n\n")
+        firstInput = input("Hello. Welcome to the Test Bench...\n Please choose what you would like to do:\n (Please respond with:\n 1. Limited Bench Test at Low Voltage\n 2. Limited Bench Test at High Voltage\n 3. Full Bench Test: parts a,b,c,d,e)\n 4. Full Bench Test: part(f)\n 5. Full Bench Test: part(h)\n 6. Quit\n\n")
 
         if int(firstInput) == 1:
             interrupterApp.testType = 'Low-Voltage-Limited'

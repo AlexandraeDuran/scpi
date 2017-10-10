@@ -657,7 +657,7 @@ def main():
             f.write("""<html lang="en">""")
             f.write("""<head>""")
             f.write("""  <meta charset="utf-8">""")
-            f.write("""    <title>ULA Ordnance Interrupter Bench Test Report</title>""")
+            f.write("""    <title>Test Report</title>""")
             f.write("""  <meta name="description" content="Systima Ordnance Interrupter Test Bench">""")
             f.write("""  <meta name="author" content="SitePoint">""")
             f.write("""  <link rel="stylesheet" href="simple.css" type="text/css"/>""")
@@ -667,7 +667,6 @@ def main():
 
             f.write("""<h1>Ordnance Interrupter Test Report</h1>""")
             f.write("""<h2>Test Type:""" + interrupterApp.testType + """ </h2>""")
-            f.write("""<h4>ULA Specification:  """ + numSpecULA + """</h4>""")
             f.write("""<h4>Test Date:  """ + testDate.strftime("%Y-%m-%d %H:%M") + """</h4>""")
             f.write("""<h4>Part Number:  """ + partNumber + """</h4>""")
             f.write("""<h4>Serial Number:  """ + getUserInitialData.serialNumber + """</h4>""")
@@ -699,20 +698,20 @@ def main():
         f.write("""<html lang="en">""")
         f.write("""<head>""")
         f.write("""  <meta charset="utf-8">""")
-        f.write("""    <title>ULA Ordnance Interrupter Bench Test Report</title>""")
+        f.write("""    <title>Test Report</title>""")
         f.write("""  <meta name="description" content="Systima Ordnance Interrupter Test Bench">""")
         f.write("""  <meta name="author" content="SitePoint">""")
         f.write("""  <link rel="stylesheet" href="simple.css" type="text/css"/>""")
         f.write("</head>")
         f.write("<!doctype html>")
         f.write("<body>")
-        f.write("""<h1>Ordnance Interrupter Test Report</h1>""")
+        f.write("""<h1>Test Report</h1>""")
         f.write("""<h2>Test Type:""" + interrupterApp.testType + """ </h2>""")
-        f.write("""<h4>ULA Specification:  """ + numSpecULA + """</h4>""")
+        f.write("""<h4>Specification:  """ + numSpecULA + """</h4>""")
         f.write("""<h4>Test Date:  """ + testDate.strftime("%Y-%m-%d %H:%M") + """</h4>""")
         f.write("""<h4>Part Number:  """ + partNumber + """</h4>""")
         f.write("""<h4>Serial Number:  """ + getUserInitialData.serialNumber + """</h4>""")
-        f.write("""<h4>Name of Systima Test Engineer:  """ + getUserInitialData.operatorsName + """</h4>""")
+        f.write("""<h4>Name of Test Engineer:  """ + getUserInitialData.operatorsName + """</h4>""")
         f.write("""<h2>RAW RESULTS</h2>""")
 
         while fullTest.n > 0:
@@ -776,7 +775,7 @@ def main():
     def limitedTest(psVoltageLevel):
         def getUserInitialData():
             getUserInitialData.operatorsName = input("What is your name (First, Last)?     ")
-            getUserInitialData.serialNumber = input("What is the serial number stamped into the base of this Ordnance Interrupter?    ")
+            getUserInitialData.serialNumber = input("What is the serial number stamped into the base of this ?    ")
         def visualArmCheck():
             visualArmCheck.armedCondition = input("Can you see the Armed Indicator?:\n (Please respond with:\n 1. Armed\n 2. Safed\n\n")
 

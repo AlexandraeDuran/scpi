@@ -20,7 +20,7 @@ maxCurrentSpec = 3
 maxResSpec = 0.5
 minResSpec = 1000000
 
-numSpecULA = '1V35000'
+numSpec = '1V35000'
 testDate = datetime.datetime.now()
 partNumber = '4xxx-201'
 
@@ -1335,7 +1335,7 @@ def main():
             f.write("""<html lang="en">""")
             f.write("""<head>""")
             f.write("""  <meta charset="utf-8">""")
-            f.write("""    <title>ULA Ordnance Interrupter Bench Test Report</title>""")
+            f.write("""    <title>Test Report</title>""")
             f.write("""  <meta name="description" content="Systima Ordnance Interrupter Test Bench">""")
             f.write("""  <meta name="author" content="SitePoint">""")
             f.write("""  <link rel="stylesheet" href="simple.css" type="text/css"/>""")
@@ -1343,7 +1343,7 @@ def main():
             f.write("<!doctype html>")
             f.write("<body>")
 
-            f.write("""<h1>Ordnance Interrupter Test Report</h1>""")
+            f.write("""<h1>Test Report</h1>""")
             f.write("""<h2>Test Type:""" + interrupterApp.testType + """ </h2>""")
             f.write("""<h4>ULA Specification:  """ + numSpecULA + """</h4>""")
             f.write("""<h4>Test Date:  """ + testDate.strftime("%Y-%m-%d %H:%M") + """</h4>""")
